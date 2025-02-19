@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify Like Website</title>
+    <style>
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header .logo {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      header .search-bar {
+        padding: 8px;
+        width: 200px;
+        border-radius: 4px;
+        border: none;
+      }
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      header nav a:hover {
+        background-color: #febd69;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .banner {
+        background-image: url("https://via.placeholder.com/1500x600");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .content {
+        padding: 20px;
+      }
+      .section-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .product-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px 0;
+      }
+      .product {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .product img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .product h3 {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      .product button {
+        padding: 10px;
+        background-color: #febd69;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .product button:hover {
+        background-color: #ff9900;
+      }
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+      .section {
+        margin-top: 40px;
+      }
+      .section p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+      }
+      /* Scrollable content */
+      .scrolling-section {
+        overflow-y: auto;
+        max-height: 300px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">ShopMaster</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+      </nav>
+      <input type="text" class="search-bar" placeholder="Search..." />
+    </header>
+
+    <div class="banner">Welcome to ShopMaster!</div>
+
+    <div class="content">
+      <div class="section">
+        <h2 class="section-title">Our Products</h2>
+        <div class="product-container">
+          <div class="product">
+            <img
+              src="https://files.oaiusercontent.com/file-JfYs5hCHrNB3iod8dgBV9b?se=2025-01-03T13%3A02%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df6c5c2dd-10e6-4457-adb4-35c9c4b5d3d6.webp&sig=xFAXguwxaW23OwWr/BZ7ddWUNZP5IdiQbECBOTU3EDk%3D"
+              alt="Product 1"
+            />
+            <h3>Product 1</h3>
+            <p>$25.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img
+              src="https://files.oaiusercontent.com/file-WcSFNcgmcK44f72BgPsxsF?se=2025-01-03T12%3A59%3A10Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9a0e9e30-ebb8-4964-b284-67d744f64eb2.webp&sig=bU7SOnio%2BrXyfxy63OzPUnJdZ45hFHMxQyqeCSZmhmk%3D"
+              alt="Product 2"
+            />
+            <h3>Product 2</h3>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img
+              src="https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Product 3"
+            />
+            <h3>Product 3</h3>
+            <p>$34.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img
+              src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Product 4"
+            />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img
+              src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Product 4"
+            />
+            <h3>Product 5</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img
+              src="https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Product 4"
+            />
+            <h3>Product 6</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img
+              src="https://images.pexels.com/photos/14691508/pexels-photo-14691508.jpeg?auto=compress&cs=tinysrgb&h=204&fit=crop&w=228&dpr=1"
+              alt="Product 4"
+            />
+            <h3>Product 7</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v2._SY304_CB573698005_.jpg"
+              alt="Product 4"
+            />
+            <h3>Product 8</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Product 4" />
+            <h3>Product 4</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">About Us</h2>
+        <p>
+          We are a leading e-commerce platform providing a wide range of
+          products. We aim to offer the best prices and services to our
+          customers.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Help Section</h2>
+        <p>
+          If you need help, feel free to contact our support team. We're here to
+          assist you with any issues you may face.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Contact</h2>
+        <p>For any inquiries, please email us at support@shopmaster.com</p>
+      </div>
+
+      <div class="scrolling-section">
+        <h3>Scrollable Section</h3>
+        <p>
+          This is a scrollable content area. You can add more content here to
+          test the scroll feature.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut
+          mauris ac nisi suscipit accumsan ut at enim.
+        </p>
+        <p>
+          Duis facilisis, orci nec interdum ullamcorper, leo metus convallis
+          tortor, eget feugiat justo augue ac elit.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        &copy; 2025 ShopMaster | <a href="#">Privacy Policy</a> |
+        <a href="#">Terms & Conditions</a>
+      </p>
+    </footer>
+
+    <script>
+      // Example of a search functionality (can be extended further)
+      const searchInput = document.querySelector(".search-bar");
+      searchInput.addEventListener("input", function () {
+        console.log("Search query: " + searchInput.value); // Just logging the input for now
+      });
+    </script>
+  </body>
+</html>
